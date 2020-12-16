@@ -1,3 +1,7 @@
+.content{
+    display: block;
+}
+
 .bg-body{
     background-color: var(--bg-default);
     color: var(--text-color);
@@ -16,7 +20,6 @@
 .logo-title{
     flex: 0.7;
     display: flex;
-    /*align-items: center;*/
     font-family: "Manrope";
     font-size: 50px;
     line-height: 41px;
@@ -157,7 +160,7 @@
 }
 
 .content-container{
-    width: 92.5rem;
+    width: 89rem;
     height: 100%;
 }
 
@@ -197,7 +200,7 @@
     color: var(--text-color);
     font-family: "Manrope";
     font-size: 39px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 85px;
     text-align: center;
     text-transform: uppercase;
@@ -267,5 +270,5 @@
 .sub-liner{
     position: relative;
     top: -2.25rem;
-    left: 44rem;
+    left: 42.25rem;
 }
