@@ -1,0 +1,271 @@
+.bg-body{
+    background-color: var(--bg-default);
+    color: var(--text-color);
+}
+
+.left-bar{
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-title{
+    flex: 0.7;
+    display: flex;
+    /*align-items: center;*/
+    font-family: "Manrope";
+    font-size: 50px;
+    line-height: 41px;
+    font-weight: 900;
+    margin-top: 2rem;
+}
+
+.left-menu{
+    flex: 3.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.left-menu a{
+    transform: rotate(-90deg);
+    opacity: 0.75;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 13.1px;
+    font-weight: 500;
+    line-height: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.left-menu .active{
+    opacity: 1;
+    font-weight: bold;
+}
+
+.left-social{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left-social svg{
+    fill: var(--secondary-color);
+    width: 20px;
+    transition: width 0.2s ease-in-out;
+}
+
+.left-social svg:hover{
+    width: 35px;
+    transition: width 0.2s ease-in-out;
+}
+
+.container-pr{
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 96.8rem;
+}
+
+.vl1{
+    background-color: var(--secondary-line-color);
+    height: 5rem;
+    width: 1px;
+}
+
+.vl2{
+    background-color: var(--secondary-line-color);
+    width: 1px;
+    height: 3rem;
+}
+
+.header-container{
+    width: 100%;
+    height: 5rem;
+}
+
+.btn{
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px 30px 30px;
+    padding: 12px 25px;
+    background-color: var(--bg-default);
+    color: var(--text-color);
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-cv{
+    float: right;
+    margin-right: 45px;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--bg-default);
+    transition: background 0.3s ease-in-out;
+}
+
+.right-bar{
+    height: 100%;
+    width: 2rem;
+    float: right;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14rem;
+}
+
+.right-email a{
+    transform: rotate(-90deg);
+    color: var(--secondary-color);
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.vl-r1{
+    background-color: var(--secondary-line-color);
+    height: 28rem;
+    width: 1px;
+}
+
+.vl-r2{
+    background-color: var(--secondary-line-color);
+    width: 1px;
+    height: 20rem;
+}
+
+.content-container{
+    width: 92.5rem;
+    height: 100%;
+}
+
+.section-container{
+    margin: 2rem;
+    height: 100%;
+}
+
+.img-profil img{
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    width: 8rem;
+    height: 8rem;
+}
+
+.hello-world{
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.name-title{
+    color: var(--text-color);
+    font-family: "Manrope";
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.job-title{
+    color: var(--text-color);
+    font-family: "Manrope";
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 85px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.presentation{
+    margin: auto;
+    width: 40rem;
+}
+
+.presentation-word{
+    color: var(--text-color);
+    font-family: "Manrope";
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.fill-contact{
+    margin: auto;
+    width: 20rem;
+    margin-top: 8rem;
+}
+
+.fill-contact-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill-contact-btn svg{
+    fill: var(--bg-default);
+    height: 1rem;
+    margin-left: 0.25rem;
+}
+
+.fill-contact-btn:hover svg{
+    fill: var(--secondary-color);
+    height: 1rem;
+    margin-left: 0.25rem;
+}
+
+.fill-contact-btn:hover{
+    background-color: var(--bg-default);
+    border: 1px solid var(--secondary-color);
+}
+
+.fill-contact-txt{
+    color: var(--text-color);
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 15px;
+}
+
+.sub-liner{
+    position: relative;
+    top: -2.25rem;
+    left: 44rem;
+}
