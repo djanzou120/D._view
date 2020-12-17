@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,15 +19,24 @@
         </style>
         <link rel="stylesheet" href="./assets/css/app.css">
     </head>
-    <body class="bg-body">
-        <div class="content">
+    <body class="bg-body" onload="loader()">
+
+        <div class="loader">
+            <div class="loader-content">
+                <div class="loader-d">
+                    D<span class="loader-commas">.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content d-none">
             <div class="left-bar">
                 <h1 class="logo-title">D.</h1>
                 <div class="left-menu">
-                    <a class="active" href="">competences</a>
-                    <a href="">A propos</a>
-                    <a href="">experience</a>
-                    <a href="">contact</a>
+                    <a id="quality" class="active" href="">competences</a>
+                    <a id="about" href="">A propos</a>
+                    <a id="experience" href="">experience</a>
+                    <a id="contact" href="">contact</a>
                 </div>
                 <div class="left-social">
                     <div class="vl1"></div>
@@ -157,7 +167,7 @@
                                 <div class="col-md-8 col-8">
                                     <p class="fill-contact-txt">Travaillons ensemble</p>
                                 </div>
-                                <div class="col-md-4 col-4">
+                                <div class="col-md-4 col-4 work-btn">
                                     <button class="btn btn-secondary fill-contact-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
 <g>
@@ -207,5 +217,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        function loader() {
+            setTimeout(() => {
+                $('.loader').fadeOut('slow');
+                $('.content').removeClass('d-none');
+
+                gsap.from([".hello-world", ".name-title", ".job-title", ".presentation"], { visibility:0 ,opacity: 0, duration: 1, y: 20, ease: 'strong.inOut'});
+                gsap.from([".sub-liner"], {visibility: 0, opacity: 0, duration: 3, y: 90});
+                gsap.from([".left-menu>a"], {visibility: 0, opacity: 0, x: -10, stagger: 0.2, ease: 'strong.inOut', duration: 2});
+                gsap.from([".left-social>a"], {visibility: 0, opacity: 0, duration: 1, y: 50, stagger: 0.5});
+                gsap.from([".right-email"], {visibility: 0, opacity: 0, duration: 2, x: 70, ease: 'strong.inOut', stagger:1});
+                gsap.from(".work-btn", {visibility: 0, opacity: 0, duration: 5, x: 50, ease: 'strong.inOut', onComplete: ()=>{gsap.from(
+                        ".work-btn", {repeat:-1, runBackwards:true, x: -25, visibility: 0, opacity: 0, duration: 2}
+                    )}})
+            }, 3000, (e) => {console.log(e); e.fadeOut('slow')});
+        }
+    </script>
     <script src="./assets/js/app.js"></script>
 </html>

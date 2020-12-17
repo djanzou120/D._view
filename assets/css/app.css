@@ -1,5 +1,34 @@
+/* Center the loader */
+.loader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.loader-content{
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.loader-d{
+    font-family: "Manrope";
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 41px;
+}
+
+.loader-commas{
+    opacity: 0.2;
+}
+/* End loader*/
+
 .content{
-    display: block;
+    display: contents;
+    width: 100%;
 }
 
 .bg-body{
