@@ -78,7 +78,7 @@ body{
     cursor: none;
 }
 
-a{
+button, a{
     cursor: none;
 }
 
@@ -187,7 +187,7 @@ a{
     color: var(--text-color);
     font-size: 11px;
     font-weight: 500;
-    cursor: pointer;
+    cursor: none !important;
     transition: background 0.3s ease-in-out;
 }
 
@@ -357,3 +357,10 @@ a{
     top: -2.25rem;
     left: 42.25rem;
 }
+
+/*
+====================== Slide Container ========================
+ */
+/*
+====================== End Slide Container ========================
+ */

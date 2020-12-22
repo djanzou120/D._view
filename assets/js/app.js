@@ -67,6 +67,15 @@ $(document).ready(() => {
         follower.removeClass("active");
     });
 
+    $(".right-email>a").on("mouseenter", function() {
+        cursor.addClass("active");
+        follower.addClass("active");
+    });
+    $(".right-email>a").on("mouseleave", function() {
+        cursor.removeClass("active");
+        follower.removeClass("active");
+    });
+
 /*
     End Mouse animation
  */
