@@ -177,6 +177,8 @@ button, a{
 .header-container{
     width: 100%;
     height: 5rem;
+    position: relative;
+    z-index: 1000;
 }
 
 .btn{
@@ -358,9 +360,122 @@ button, a{
     left: 42.25rem;
 }
 
-/*
-====================== Slide Container ========================
+/**
+    =========================== About Page ======================
  */
+.page-container{
+    margin: 3% 13%;
+}
+
+.title-section-about{
+    color: var(--text-color);
+    font-family: "Manrope";
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 85px;
+    text-transform: uppercase;
+}
+
+.sub-liner-about{
+    position: relative;
+    top: -0.5rem;
+    right: -1.50rem;
+    width: 19rem;
+}
+
+.presentation-about{
+    color: var(--text-color);
+    font-family: "Manrope";
+    font-size: 14px;
+    line-height: 30px;
+    text-align: justify;
+    margin: 6% 2%;
+}
+
+.skill-part{
+    margin-top: 5%;
+}
+
+.skill-part .row div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.first-son>div:nth-child(2){
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+}
+
+.middle-son>div:nth-child(1){
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.middle-son>div:nth-child(2){
+    border: 1px solid var(--border-color);
+}
+
+.middle-son>div:nth-child(3){
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.last-son>div:nth-child(2){
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+}
+
+/**
+    =========================== About Page ======================
+ */
+
+.sub-liner-project{
+    position: relative;
+    top: -0.75rem;
+    margin: auto;
+    display: flex;
+}
+
+.project-title{
+    color: var(--text-color);
+    font-family: "Manrope";
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 85px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /*
-====================== End Slide Container ========================
+ Carousel Animation
+ */
+
+.carousel{
+    width: 100%;
+    height: 20rem;
+    margin-top: 5rem;
+}
+
+.carousel-inner{
+    width: 60%;
+    height: 26rem;
+    background-color: #fff;
+    display: flex;
+    margin: auto;
+}
+
+.carousel-item{
+
+}
+
+.carousel-control-btn{
+    width: 33% !important;
+}
+
+
+/*
+ End Carousel Animation
  */
